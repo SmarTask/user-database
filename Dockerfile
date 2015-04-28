@@ -1,4 +1,4 @@
-FROM ubuntu:14.10
+FROM ubuntu:15.04
 
 MAINTAINER Lemarinel Sebastien <lemarinel.s@gmail.com>
 
@@ -16,7 +16,6 @@ RUN apt-get update \
 && rm -rf /tmp/*
 
 VOLUME ["/data/db"]
-WORKDIR /data
 
 EXPOSE 27017
 
